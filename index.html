@@ -21,27 +21,56 @@
   <!-- Header section -->
     <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
         <!-- Navbar -->
-        <nav class="flex items-center justify-between h-16 sm:h-20">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
             <div class="font-Lobster sm:text-2xl">IndorPlant.</div>
-            <div id="nav-menu" class="absolute top-0 left-[-100%] w-full min-h-[80vh] bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden">
-                <ul class="flex flex-col items-center gap-6">
+            <div id="nav-menu" class="absolute top-0 left-[-100%] w-full min-h-[80vh] bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:bg-transparent lg:min-h-0 lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#popular" class="nav-link">Popular</a></li>
                     <li><a href="#reviews" class="nav-link">Reviews</a></li>
                 </ul>
-                <div class="absolute bottom-0 -right-10 opacity-90">
+                <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
                     <img src="/img/leaf-1.png" alt="leaf" class="w-32">
                 </div>
-                <div class="absolute -top-5 -left-5 opacity-90">
+                <div class="absolute -top-5 -left-5 opacity-90 lg:hidden">
                     <img src="/img/leaf-2.png" alt="leaf" class="w-32">
                 </div>
             </div>
-            <div class="text-xl sm:text-3xl cursor-pointer z-50">
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
                 <i class="ri-menu-4-line" id="hamburger"></i>
             </div>
         </nav>
     </header>
+
+    <!-- Main section -->
+    <main>
+        <!-- Home section -->
+    <section id="home">
+        <div>
+            <div>
+                <div>
+                    <h1>
+                        <span class="text-yellow-500">Plants</span> make a <br /> positive
+                        <span class="text-yellow-500">impact</span> on <br /> your environment 
+                    </h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque itaque quas commodi sapiente ipsam, ipsum eius ducimus dignissimos, quisquam aspernatur error numquam corporis excepturi vitae tempora iste ratione quo impedit!</p>
+
+                    <div>
+                        <button>
+                            <span>Shop Now</span>
+                        </button>
+                        <button>
+                            <span>Know More</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </main>
 
     <!-- script js -->
     <script src="main.js"></script>
