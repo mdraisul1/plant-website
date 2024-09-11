@@ -49,3 +49,7 @@ h1{
 .popular_card:hover img{
     @apply -top-8 duration-300;
 }
+
+.swiper-pagination-bullet {
+    @apply bg-green-500 w-2 h-2 rounded-full !important;
+}
