@@ -24,6 +24,9 @@ h1{
     @apply text-yellow-500;
 }
 
+.title{
+    @apply text-3xl md:text-4xl lg:text-5xl font-Lobster text-yellow-500;
+}
 
 /* button */
 .btn{
