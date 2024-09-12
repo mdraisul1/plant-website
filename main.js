@@ -44,3 +44,21 @@ const swiper = new Swiper('.swiper', {
     }
 
   })
+
+
+// show scroll up
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+
+    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    if(this.scrollY >= 250) {
+        scrollUp.classList.remove('-bottom-1/2')
+        scrollUp.classList.add('bottom-4')
+    }else{
+      scrollUp.classList.add('-bottom-1/2')
+      scrollUp.classList.remove('bottom-4')
+    }
+}
+
+window.addEventListener('scroll', scrollUp)
+
